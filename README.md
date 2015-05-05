@@ -3,7 +3,7 @@
 ## Setup
 
 ```bash
-$ 
+$ git clone https://github.com/purplepixels/Round1-Test.git .
 ```
 
 Create MySQL Database and table.
