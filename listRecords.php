@@ -82,6 +82,7 @@ if(isset($_GET['id'])) {
             }
         }
         catch (PDOException $e) {
+	    echo "An error has occured. Please check the Database settings <br/>";
             echo $sql . "<br>" . $e->getMessage();
         }
         
