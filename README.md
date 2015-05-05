@@ -29,6 +29,11 @@ $ cd tests
 $ phpunit --bootstrap bootstrap.php PayPal/Test/Api/CreditCardTest.php
 $ phpunit --bootstrap bootstrap.php braintree/unit/CreditCardTest.php
 ```
+## Viewing saved Data
+
+There is a file called listRecords.php, which accepts either an id number (for single transactions) or not arguments (for a full lists) and renders out all the database records
+
+listRecords.php (or) listRecords.php?id=5 (where 5 is the id of the record).
 
 
 ## Notes
