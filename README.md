@@ -24,8 +24,7 @@ ENGINE = InnoDB;
 ##### PHPUnit tests can be ran as follows
 
 (Example is from Root Folder)
-```bahs
-$ phpunit --bootstrap bootstrap.php
+```bash
 $ cd tests
 $ phpunit --bootstrap bootstrap.php PayPal/Test/Api/CreditCardTest.php
 $ phpunit --bootstrap bootstrap.php braintree/unit/CreditCardTest.php
