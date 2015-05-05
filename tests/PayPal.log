@@ -1,0 +1,43 @@
+PPHttpConnection: Connecting to https://api.sandbox.paypal.com/v1/oauth2/token
+PPHttpConnection: Payload grant_type=client_credentials
+PPHttpConnection: Adding header Authorization: Basic RUJXS2psRUxLTVlxUk5RNnNZdkZvNjRGdGFSTFJSNUJkSEVFU21oYTQ5VE06RU80MjJkbjNnUUxnRGJ1d3FUanpyRmdGdGFSTFJSNUJkSEVFU21oYTQ5VE0=
+PPHttpConnection: Adding header Accept: */*
+PPHttpConnection: Connecting to https://api.sandbox.paypal.com/v1/oauth2/token
+PPHttpConnection: Payload grant_type=client_credentials
+PPHttpConnection: Adding header Authorization: Basic RUJXS2psRUxLTVlxUk5RNnNZdkZvNjRGdGFSTFJSNUJkSEVFU21oYTQ5VE06RU80MjJkbjNnUUxnRGJ1d3FUanpyRmdGdGFSTFJSNUJkSEVFU21oYTQ5VE0=
+PPHttpConnection: Adding header Accept: */*
+PPHttpConnection: Connecting to https://api.sandbox.paypal.com/v1/vault/credit-card
+PPHttpConnection: Payload {"type":"visa","number":"4417119669820331","expire_month":11,"expire_year":"2019","cvv2":"012","first_name":"V","last_name":"C","id":"id","valid_until":"2013-02-28T00:00:00Z","state":"created","payer_id":"payer-id","billing_address":{"line1":"3909 Witmer Road","line2":"Niagara Falls","city":"Niagara Falls","state":"NY","postal_code":"14305","country_code":"US","phone":"716-298-1822","type":"Billing"},"links":[{"href":"USD","rel":"1.12","method":"1.12"}]}
+PPHttpConnection: Adding header Content-Type: application/json
+PPHttpConnection: Adding header User-Agent: PayPalSDK/REST-SDK-PHP 0.5.0 (Lang=PHP;V=5.5.9-1ubuntu4.9;Bit=64;OS=Linux_3.16.0-30-generic;Machine=x86_64;Openssl=1.0.1f;curl=7.35.0)
+PPHttpConnection: Adding header Authorization: Bearer A015zaZjOuX963AYJpGnXxQNpd2lvBBu6WiNtKdSbVOlimk
+PPHttpConnection: Adding header PayPal-Request-Id: ubuntu24611143082709931509
+PPHttpConnection: Connecting to https://api.sandbox.paypal.com/v1/oauth2/token
+PPHttpConnection: Payload grant_type=client_credentials
+PPHttpConnection: Adding header Authorization: Basic RUJXS2psRUxLTVlxUk5RNnNZdkZvNjRGdGFSTFJSNUJkSEVFU21oYTQ5VE06RU80MjJkbjNnUUxnRGJ1d3FUanpyRmdGdGFSTFJSNUJkSEVFU21oYTQ5VE0=
+PPHttpConnection: Adding header Accept: */*
+PPHttpConnection: Connecting to https://api.sandbox.paypal.com/v1/vault/credit-card
+PPHttpConnection: Payload {"type":"visa","number":"4009348888881881","expire_month":11,"expire_year":"2019","cvv2":"012","first_name":"V","last_name":"C","id":"id","valid_until":"2013-02-28T00:00:00Z","state":"created","payer_id":"payer-id","billing_address":{"line1":"3909 Witmer Road","line2":"Niagara Falls","city":"Niagara Falls","state":"NY","postal_code":"14305","country_code":"US","phone":"716-298-1822","type":"Billing"},"links":[{"href":"USD","rel":"1.12","method":"1.12"}]}
+PPHttpConnection: Adding header Content-Type: application/json
+PPHttpConnection: Adding header User-Agent: PayPalSDK/REST-SDK-PHP 0.5.0 (Lang=PHP;V=5.5.9-1ubuntu4.9;Bit=64;OS=Linux_3.16.0-30-generic;Machine=x86_64;Openssl=1.0.1f;curl=7.35.0)
+PPHttpConnection: Adding header Authorization: Bearer A015JMKWn4-soPTxhKA0Pcjn0dAIoks7mT6n0oquAIYpjbk
+PPHttpConnection: Adding header PayPal-Request-Id: ubuntu24643143082715942041
+PPHttpConnection: Connecting to https://api.sandbox.paypal.com/v1/oauth2/token
+PPHttpConnection: Payload grant_type=client_credentials
+PPHttpConnection: Adding header Authorization: Basic RUJXS2psRUxLTVlxUk5RNnNZdkZvNjRGdGFSTFJSNUJkSEVFU21oYTQ5VE06RU80MjJkbjNnUUxnRGJ1d3FUanpyRmdGdGFSTFJSNUJkSEVFU21oYTQ5VE0=
+PPHttpConnection: Adding header Accept: */*
+PPHttpConnection: Connecting to https://api.sandbox.paypal.com/v1/payments/payment
+PPHttpConnection: Payload {"intent":"sale","redirect_urls":{"return_url":"http:\/\/localhost\/return","cancel_url":"http:\/\/localhost\/cancel"},"payer":{"payment_method":"credit_card","funding_instruments":[{"credit_card":{"type":"visa","number":"4009348888881881","expire_month":11,"expire_year":"2019","cvv2":"012","first_name":"V","last_name":"C","id":"id","valid_until":"2013-02-28T00:00:00Z","state":"created","payer_id":"payer-id"},"credit_card_token":{"payer_id":"PAYER-123","credit_card_id":"CC-123"}}]},"transactions":[{"amount":{"currency":"USD","total":"1.12"},"description":"This is the payment description."}]}
+PPHttpConnection: Adding header Content-Type: application/json
+PPHttpConnection: Adding header User-Agent: PayPalSDK/REST-SDK-PHP 0.5.0 (Lang=PHP;V=5.5.9-1ubuntu4.9;Bit=64;OS=Linux_3.16.0-30-generic;Machine=x86_64;Openssl=1.0.1f;curl=7.35.0)
+PPHttpConnection: Adding header Authorization: Bearer A015tyfbaX8KHPVWuvKLwjOXBxQFSlxUetZscJJitNTACWg
+PPHttpConnection: Adding header PayPal-Request-Id: ubuntu24679143082730319038
+PPHttpConnection: Connecting to https://api.sandbox.paypal.com/v1/oauth2/token
+PPHttpConnection: Payload grant_type=client_credentials
+PPHttpConnection: Adding header Authorization: Basic RUJXS2psRUxLTVlxUk5RNnNZdkZvNjRGdGFSTFJSNUJkSEVFU21oYTQ5VE06RU80MjJkbjNnUUxnRGJ1d3FUanpyRmdGdGFSTFJSNUJkSEVFU21oYTQ5VE0=
+PPHttpConnection: Adding header Accept: */*
+PPHttpConnection: Connecting to https://api.sandbox.paypal.com/v1/oauth2/token
+PPHttpConnection: Payload grant_type=client_credentials
+PPHttpConnection: Adding header Authorization: Basic ZHVtbXk6c2VjcmV0
+PPHttpConnection: Adding header Accept: */*
+PPHttpConnection: Got 401 response from server. Retrying
