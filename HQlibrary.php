@@ -468,8 +468,8 @@ class PayPalPayment extends HQLibrary
             }
             exit(1);
         }
-        
-        echo $payment->getId();
+
+        print "<strong>Payment Successfully Processed</strong><br /> Payment ID: " . $payment->getId();
         //        var_dump($payment->toArray());
         $this->writeToDatabase($this->getOrder(), $payment->toArray());
     }
@@ -479,11 +479,24 @@ class PayPalPayment extends HQLibrary
 
 class BraintreePayment extends HQLibrary
 {
+    function getMerchantAccount()
+    { 
+        
+        switch ($this->getCurrency()) {
+                case 'hkd': return BRAINTREE_HKD;
+                    break;
+                case 'sgd': return BRAINTREE_SGD;
+                    break;
+                case 'thb': return BRAINTREE_THB;
+                    break;
+        }
+    }
     
     function processBraintree()
     {
         $expireDate = $this->getCardMonth() . "/" . $this->getCardYear();
         $result     = Braintree_Transaction::sale(array(
+            'merchantAccountId' => $this->getMerchantAccount(),
             'amount' => $this->getPrice(),
             'creditCard' => array(
                 'number' => $this->getCardNumber(),
