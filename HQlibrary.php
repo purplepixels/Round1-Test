@@ -435,7 +435,7 @@ class PayPalPayment extends HQLibrary
         
         // Amount
         $amount = new Amount();
-        $amount->setCurrency("USD"); //Add to POST and change as necessary!
+        $amount->setCurrency(strtoupper($this->getCurrency()));
         $amount->setTotal($this->getPrice());
         
         // Transaction Description
