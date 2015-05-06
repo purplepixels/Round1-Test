@@ -91,6 +91,7 @@ if(isset($_GET['id'])) {
     
     function readAllDatabaseRecords()
     {
+        try {
         // get latest record ID
         $conn = new PDO("mysql:host=" . DB_SERVER . ";dbname=" . DB_NAME, DB_USER, DB_PASS);
         $sql  = "SELECT id FROM transactions ORDER BY id DESC LIMIT 1";
@@ -111,7 +112,12 @@ if(isset($_GET['id'])) {
             print "No records currently in the Database";
         }
         
+        }
+        catch (PDOException $e) {
+	    echo "An error has occured. Please check the Database settings <br/>";
+            echo $sql . "<br>" . $e->getMessage();
+        }
+        
+        $conn = null;
     }
-    
-
 ?>
